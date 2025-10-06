@@ -1,155 +1,301 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet our experienced Chartered Accountants and team members who deliver excellence.">
-  <meta name="keywords" content="CA Team, Chartered Accountants, Professionals">
-  <meta name="author" content="Lihala & Co.">
-  <title>Our Team - Lihala & Co.</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-blue-700">Lihala & Co.</h1>
-      <nav class="space-x-6">
-        <a href="index.html" class="hover:text-blue-600">Home</a>
-        <a href="services.html" class="hover:text-blue-600">Services</a>
-        <a href="team.html" class="hover:text-blue-600 font-semibold">Team</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Meet our experienced Chartered Accountants and team members who deliver excellence."
+        />
+        <meta
+            name="keywords"
+            content="CA Team, Chartered Accountants, Professionals"
+        />
+        <meta name="author" content="Lihala & Co." />
+        <title>Our Team - Lihala & Co.</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50 text-gray-800">
+        <!-- Header -->
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div
+                class="container mx-auto flex justify-between items-center p-4"
+            >
+                <h1 class="text-2xl font-bold text-blue-700">Lihala & Co.</h1>
+                <nav class="space-x-6">
+                    <a href="index.html" class="hover:text-blue-600">Home</a>
+                    <a href="services.html" class="hover:text-blue-600"
+                        >Services</a
+                    >
+                    <a
+                        href="team.html"
+                        class="hover:text-blue-600 font-semibold"
+                        >Team</a
+                    >
+                    <a href="contact.html" class="hover:text-blue-600"
+                        >Contact</a
+                    >
+                </nav>
+            </div>
+        </header>
 
-  <!-- Hero -->
-  <section class="bg-blue-700 text-white py-16 text-center">
-    <h2 class="text-4xl font-bold">Meet Our Team</h2>
-    <p class="mt-4 text-lg max-w-2xl mx-auto">
-      At Lihala & Co., we are driven by integrity, expertise, and commitment. 
-      Our partners and associates bring decades of professional experience 
-      to help clients achieve success with confidence.
-    </p>
-  </section>
+        <!-- Hero -->
+        <section class="bg-blue-700 text-white py-16 text-center">
+            <h2 class="text-4xl font-bold">Meet Our Team</h2>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">
+                At Lihala & Co., we are driven by integrity, expertise, and
+                commitment. Our partners and associates bring decades of
+                professional experience to help clients achieve success with
+                confidence.
+            </p>
+        </section>
 
-  <!-- Team Section -->
-  <section class="container mx-auto py-16 px-6">
-    <div class="grid md:grid-cols-3 gap-12">
-      
-      <!-- Rajesh -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
-           onclick="openModal('rajeshModal')">
-        <img src="assets/RajeshLihala.jpg" alt="CA Rajesh Lihala" class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4">
-        <h3 class="text-xl font-bold text-blue-700">CA Rajesh Lihala</h3>
-        <p class="text-gray-600">Founder & Managing Partner (FCA)</p>
-        <p class="mt-3 text-sm text-gray-500">Specialist in Auditing, Corporate Governance, and Business Advisory with over 20 years of experience.</p>
-        <span class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition">Click to view full profile</span>
-      </div>
+        <!-- Team Section -->
+        <section class="container mx-auto py-16 px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Rajesh -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
+                    onclick="openModal('rajeshModal')"
+                >
+                    <img
+                        src="assets/RajeshLihala.jpg"
+                        alt="CA Rajesh Lihala"
+                        class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4"
+                    />
+                    <h3 class="text-xl font-bold text-blue-700">
+                        CA Rajesh Lihala
+                    </h3>
+                    <p class="text-gray-600">
+                        Founder & Managing Partner (FCA)
+                    </p>
+                    <p class="mt-3 text-sm text-gray-500">
+                        Specialist in Auditing, Corporate Governance, and
+                        Business Advisory with over 20 years of experience.
+                    </p>
+                    <span
+                        class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition"
+                        >Click to view full profile</span
+                    >
+                </div>
 
-      <!-- Ajay -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
-           onclick="openModal('ajayModal')">
-        <img src="assets/ajaysir.jpg" alt="CA Ajay Gupta" class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4">
-        <h3 class="text-xl font-bold text-blue-700">CA Ajay Gupta</h3>
-        <p class="text-gray-600">Partner (FCA, CS)</p>
-        <p class="mt-3 text-sm text-gray-500">FCA and Company Secretary with nearly a decade of experience in taxation and compliance advisory.</p>
-        <span class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition">Click to view full profile</span>
-      </div>
+                <!-- Ajay -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
+                    onclick="openModal('ajayModal')"
+                >
+                    <img
+                        src="assets/ajaysir.jpg"
+                        alt="CA Ajay Gupta"
+                        class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4"
+                    />
+                    <h3 class="text-xl font-bold text-blue-700">
+                        CA Ajay Gupta
+                    </h3>
+                    <p class="text-gray-600">Partner (FCA, CS)</p>
+                    <p class="mt-3 text-sm text-gray-500">
+                        FCA and Company Secretary with nearly a decade of
+                        experience in taxation and compliance advisory.
+                    </p>
+                    <span
+                        class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition"
+                        >Click to view full profile</span
+                    >
+                </div>
 
-      <!-- Sumit -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
-           onclick="openModal('sumitModal')">
-        <img src="assets/sumitsir.jpg" alt="CA Sumit Kumar Mondal" class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4">
-        <h3 class="text-xl font-bold text-blue-700">CA Sumit Kumar Mondal</h3>
-        <p class="text-gray-600">Partner (ACA, NISM)</p>
-        <p class="mt-3 text-sm text-gray-500">Associate CA, specialist in GST and International Taxation, also holds NISM certification.</p>
-        <span class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition">Click to view full profile</span>
-      </div>
+                <!-- Sumit -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 text-center transform transition hover:-translate-y-2 hover:shadow-xl cursor-pointer relative group"
+                    onclick="openModal('sumitModal')"
+                >
+                    <img
+                        src="assets/sumitsir.jpg"
+                        alt="CA Sumit Kumar Mondal"
+                        class="mx-auto w-40 h-40 object-cover rounded-full ring-4 ring-blue-100 mb-4"
+                    />
+                    <h3 class="text-xl font-bold text-blue-700">
+                        CA Sumit Kumar Mondal
+                    </h3>
+                    <p class="text-gray-600">Partner (ACA, NISM)</p>
+                    <p class="mt-3 text-sm text-gray-500">
+                        Associate CA, specialist in GST and International
+                        Taxation, also holds NISM certification.
+                    </p>
+                    <span
+                        class="absolute inset-x-0 bottom-4 text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition"
+                        >Click to view full profile</span
+                    >
+                </div>
+            </div>
+        </section>
 
-    </div>
-  </section>
-
-  <!-- Rajesh Modal -->
-  <div id="rajeshModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative">
-      <button onclick="closeModal('rajeshModal')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
-        <img src="assets/RajeshLihala.jpg" alt="CA Rajesh Lihala" class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100">
-        <div>
-          <h3 class="text-2xl font-bold text-blue-700 mb-2">CA Rajesh Lihala</h3>
-          <p class="text-gray-600 font-medium mb-4">Founder & Managing Partner (FCA)</p>
-          <p class="text-gray-700 leading-relaxed text-justify text-sm">
-            Mr. Rajesh Lihala, Independent Director of the Company, is a Fellow Member of the Institute of Chartered Accountants of India and holds qualifications of B.Sc., FCA, DISA, and IP. 
-            He has completed CAAT (ICAI) in 2005. With vast experience in Audit, Taxation, and Insolvency, he is also a registered Resolution Professional with IBBI and has completed the Certificate Course in Concurrent Audit of Banks from ICAI. 
-            He currently serves as a Member of the Clinical Research Ethics Committee of Antara Psychiatric Hospital and Joint Secretary of the NGO Nish-Shabd Angeekar Welfare Association. 
-            He has earlier contributed to ICAI as a Co-opted Member of the Ethical Standards Committee (2011) and Special Invitee to the Board of Studies (2013–14).
-          </p>
+        <!-- Rajesh Modal -->
+        <div
+            id="rajeshModal"
+            class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+            <div
+                class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative"
+            >
+                <button
+                    onclick="closeModal('rajeshModal')"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
+                >
+                    &times;
+                </button>
+                <div
+                    class="flex flex-col md:flex-row items-center md:items-start gap-6"
+                >
+                    <img
+                        src="assets/RajeshLihala.jpg"
+                        alt="CA Rajesh Lihala"
+                        class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100"
+                    />
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-700 mb-2">
+                            CA Rajesh Lihala
+                        </h3>
+                        <p class="text-gray-600 font-medium mb-4">
+                            Founder & Managing Partner (FCA)
+                        </p>
+                        <p
+                            class="text-gray-700 leading-relaxed text-justify text-sm"
+                        >
+                            Mr. Rajesh Lihala, Independent Director of the
+                            Company, is a Fellow Member of the Institute of
+                            Chartered Accountants of India and holds
+                            qualifications of B.Sc., FCA, DISA, and IP. He has
+                            completed CAAT (ICAI) in 2005. With vast experience
+                            in Audit, Taxation, and Insolvency, he is also a
+                            registered Resolution Professional with IBBI and has
+                            completed the Certificate Course in Concurrent Audit
+                            of Banks from ICAI. He currently serves as a Member
+                            of the Clinical Research Ethics Committee of Antara
+                            Psychiatric Hospital and Joint Secretary of the NGO
+                            Nish-Shabd Angeekar Welfare Association. He has
+                            earlier contributed to ICAI as a Co-opted Member of
+                            the Ethical Standards Committee (2011) and Special
+                            Invitee to the Board of Studies (2013–14).
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Ajay Modal -->
-  <div id="ajayModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative">
-      <button onclick="closeModal('ajayModal')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
-        <img src="assets/ajaysir.jpg" alt="CA Ajay Gupta" class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100">
-        <div>
-          <h3 class="text-2xl font-bold text-blue-700 mb-2">CA Ajay Gupta</h3>
-          <p class="text-gray-600 font-medium mb-4">Partner (FCA, CS)</p>
-          <p class="text-gray-700 leading-relaxed text-justify text-sm">
-            CA Ajay Gupta is a Fellow Chartered Accountant and also a qualified Company Secretary. 
-            With almost a decade of professional experience, he specializes in Direct and Indirect Taxation, corporate compliance, and advisory services. 
-            His dual qualification enables him to provide a unique blend of taxation and secretarial insights, making him an asset for businesses navigating today’s complex legal and fiscal environment. 
-            Ajay has guided numerous clients through intricate compliance matters and continues to deliver strategic value with practical solutions.
-          </p>
+        <!-- Ajay Modal -->
+        <div
+            id="ajayModal"
+            class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+            <div
+                class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative"
+            >
+                <button
+                    onclick="closeModal('ajayModal')"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
+                >
+                    &times;
+                </button>
+                <div
+                    class="flex flex-col md:flex-row items-center md:items-start gap-6"
+                >
+                    <img
+                        src="assets/ajaysir.jpg"
+                        alt="CA Ajay Gupta"
+                        class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100"
+                    />
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-700 mb-2">
+                            CA Ajay Gupta
+                        </h3>
+                        <p class="text-gray-600 font-medium mb-4">
+                            Partner (FCA, CS)
+                        </p>
+                        <p
+                            class="text-gray-700 leading-relaxed text-justify text-sm"
+                        >
+                            CA Ajay Gupta is a Fellow Chartered Accountant and
+                            also a qualified Company Secretary. With almost a
+                            decade of professional experience, he specializes in
+                            Direct and Indirect Taxation, corporate compliance,
+                            and advisory services. His dual qualification
+                            enables him to provide a unique blend of taxation
+                            and secretarial insights, making him an asset for
+                            businesses navigating today’s complex legal and
+                            fiscal environment. Ajay has guided numerous clients
+                            through intricate compliance matters and continues
+                            to deliver strategic value with practical solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Sumit Modal -->
-  <div id="sumitModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative">
-      <button onclick="closeModal('sumitModal')" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
-        <img src="assets/sumitsir.jpg" alt="CA Sumit Kumar Mondal" class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100">
-        <div>
-          <h3 class="text-2xl font-bold text-blue-700 mb-2">CA Sumit Kumar Mondal</h3>
-          <p class="text-gray-600 font-medium mb-4">Partner (ACA, NISM)</p>
-          <p class="text-gray-700 leading-relaxed text-justify text-sm">
-            CA Sumit Kumar Mondal is an Associate Chartered Accountant and a recognized specialist in GST and Indirect Taxation. 
-            He also holds a prestigious NISM Certification, strengthening his capabilities in financial and securities market regulations. 
-            With extensive experience in international taxation, structuring, and compliance, Sumit has guided businesses in achieving tax efficiency while ensuring strict regulatory adherence. 
-            His combined expertise in GST and financial markets allows him to provide well-rounded, practical solutions for clients across industries.
-          </p>
+        <!-- Sumit Modal -->
+        <div
+            id="sumitModal"
+            class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+            <div
+                class="bg-white max-w-3xl mx-4 rounded-lg shadow-lg p-8 relative"
+            >
+                <button
+                    onclick="closeModal('sumitModal')"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
+                >
+                    &times;
+                </button>
+                <div
+                    class="flex flex-col md:flex-row items-center md:items-start gap-6"
+                >
+                    <img
+                        src="assets/sumitsir.jpg"
+                        alt="CA Sumit Kumar Mondal"
+                        class="w-40 h-40 object-cover rounded-full ring-4 ring-blue-100"
+                    />
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-700 mb-2">
+                            CA Sumit Kumar Mondal
+                        </h3>
+                        <p class="text-gray-600 font-medium mb-4">
+                            Partner (ACA, NISM)
+                        </p>
+                        <p
+                            class="text-gray-700 leading-relaxed text-justify text-sm"
+                        >
+                            CA Sumit Kumar Mondal is an Associate Chartered
+                            Accountant and a recognized specialist in GST and
+                            Indirect Taxation. He also holds a prestigious NISM
+                            Certification, strengthening his capabilities in
+                            financial and securities market regulations. With
+                            extensive experience in international taxation,
+                            structuring, and compliance, Sumit has guided
+                            businesses in achieving tax efficiency while
+                            ensuring strict regulatory adherence. His combined
+                            expertise in GST and financial markets allows him to
+                            provide well-rounded, practical solutions for
+                            clients across industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; Lihala & Co. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-6">
+            <div class="container mx-auto text-center">
+                <p>&copy; Lihala & Co. All Rights Reserved.</p>
+            </div>
+        </footer>
 
-  <!-- Modal Script -->
-  <script>
-    function openModal(id) {
-      document.getElementById(id).classList.remove("hidden");
-    }
-    function closeModal(id) {
-      document.getElementById(id).classList.add("hidden");
-    }
-  </script>
-</body>
+        <!-- Modal Script -->
+        <script>
+            function openModal(id) {
+                document.getElementById(id).classList.remove("hidden");
+            }
+            function closeModal(id) {
+                document.getElementById(id).classList.add("hidden");
+            }
+        </script>
+    </body>
 </html>
-
-
-
-
