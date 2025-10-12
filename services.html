@@ -14,7 +14,12 @@
         <meta name="author" content="Lihala & Co." />
         <title>Our Services - Lihala & Co.</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <style>
+            body {
+                font-family: 'Inter', sans-serif;
+            }
             .fade-up {
                 opacity: 0;
                 transform: translateY(20px);
@@ -28,143 +33,199 @@
     </head>
     <body class="bg-gray-50 text-gray-800">
         <!-- Header -->
-        <header class="bg-white shadow-md sticky top-0 z-50">
-            <div
-                class="container mx-auto flex justify-between items-center p-4"
-            >
-                <h1 class="text-2xl font-bold text-blue-700">Lihala & Co.</h1>
-                <nav class="space-x-6">
-                    <a href="index.html" class="hover:text-blue-600">Home</a>
-                    <a
-                        href="services.html"
-                        class="hover:text-blue-600 font-semibold"
-                        >Services</a
-                    >
-                    <a href="team.html" class="hover:text-blue-600">Team</a>
-                    <a href="contact.html" class="hover:text-blue-600"
-                        >Contact</a
-                    >
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center px-6 py-4">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">LC</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-blue-800">Lihala & Co.</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-700 transition">Home</a>
+                    <a href="services.html" class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1 transition">Services</a>
+                    <a href="team.html" class="text-gray-600 hover:text-blue-700 transition">Team</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-700 transition">Contact</a>
                 </nav>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </header>
 
         <!-- Hero -->
-        <section class="bg-blue-900 text-white py-16 text-center">
-            <h2 class="text-4xl font-bold">Our Services</h2>
-            <p class="mt-4 text-lg">
-                Comprehensive financial solutions for businesses and individuals
-            </p>
+        <section class="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white py-20">
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="relative container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto">
+                    Comprehensive financial solutions tailored for businesses and individuals
+                </p>
+            </div>
         </section>
 
         <!-- Services -->
-        <section class="container mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    Auditing
-                </h3>
-                <p class="">
-                    We ensure accuracy, transparency, and compliance in your
-                    financial processes incuding
-                </p>
-                <div
-                    class="flex flex-row flex-wrap gap-2 text-sm font-bold my-3"
-                >
-                    <div class="rounded-3xl bg-blue-500/20 px-3 py-1">
-                        Statutory audits
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Professional Services</h3>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                        We offer a comprehensive range of financial services designed to meet your business needs and ensure regulatory compliance.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card -->
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-search-dollar text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Auditing</h3>
+                        <p class="text-gray-600 mb-4">
+                            We ensure accuracy, transparency, and compliance in your financial processes including:
+                        </p>
+                        <div class="flex flex-row flex-wrap gap-2 text-sm">
+                            <div class="rounded-3xl bg-blue-500/20 px-3 py-1 text-blue-800 font-medium">
+                                Statutory audits
+                            </div>
+                            <div class="rounded-3xl bg-blue-500/20 px-3 py-1 text-blue-800 font-medium">
+                                Internal audits
+                            </div>
+                            <div class="rounded-3xl bg-blue-500/20 px-3 py-1 text-blue-800 font-medium">
+                                Compliance checks
+                            </div>
+                        </div>
                     </div>
-                    <div class="rounded-3xl bg-blue-500/20 px-3 py-1">
-                        Internal audits
+
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-file-invoice-dollar text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Taxation</h3>
+                        <p class="text-gray-600">
+                            Expert tax planning and compliance services for individuals and corporates, ensuring maximum savings within legal frameworks.
+                        </p>
                     </div>
-                    <div class="rounded-3xl bg-blue-500/20 px-3 py-1">
-                        Compliance checks
+
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-receipt text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">GST Services</h3>
+                        <p class="text-gray-600">
+                            Comprehensive GST registration, return filing, and advisory services to keep your business compliant and efficient.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-handshake text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Business Advisory</h3>
+                        <p class="text-gray-600">
+                            Strategic financial advice to help your business grow, including mergers, acquisitions, and corporate restructuring.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-users text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Payroll Management</h3>
+                        <p class="text-gray-600">
+                            End-to-end payroll processing ensuring timely, accurate, and compliant salary payments for your employees.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl border border-gray-200 p-8 hover:shadow-lg transition duration-300 fade-up">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-building text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Company Incorporation</h3>
+                        <p class="text-gray-600">
+                            Seamless setup of new companies, LLPs, and partnerships with end-to-end compliance support.
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    Taxation
-                </h3>
-                <p class="">
-                    Expert tax planning and compliance services for individuals
-                    and corporates, ensuring maximum savings within legal
-                    frameworks.
-                </p>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    GST Services
-                </h3>
-                <p class="">
-                    Comprehensive GST registration, return filing, and advisory
-                    services to keep your business compliant and efficient.
-                </p>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    Business Advisory
-                </h3>
-                <p class="">
-                    Strategic financial advice to help your business grow,
-                    including mergers, acquisitions, and corporate
-                    restructuring.
-                </p>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    Payroll Management
-                </h3>
-                <p class="">
-                    End-to-end payroll processing ensuring timely, accurate, and
-                    compliant salary payments for your employees.
-                </p>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl border border-blue-500/30 shadow-md p-6"
-            >
-                <h3 class="text-xl font-bold text-blue-700 mb-2 cursor-pointer">
-                    Company Incorporation
-                </h3>
-                <p class="">
-                    Seamless setup of new companies, LLPs, and partnerships with
-                    end-to-end compliance support.
-                </p>
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="text-center py-10 bg-blue-50">
-            <h3 class="text-2xl font-bold mb-4">Need Professional Guidance?</h3>
-            <a
-                href="contact.html"
-                class="bg-blue-700 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-800 transition"
-                >Book a Consultation</a
-            >
+        <section class="py-16 bg-blue-50">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Need Professional Guidance?</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Let us help you navigate the complexities of financial compliance and strategic planning.
+                </p>
+                <a
+                    href="contact.html"
+                    class="inline-block bg-blue-700 text-white px-8 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition duration-300"
+                    >Book a Consultation</a
+                >
+            </div>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-6">
-            <div class="container mx-auto text-center">
-                <p>&copy; Lihala & Co. All Rights Reserved.</p>
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-3">
+                                <span class="text-white font-bold">LC</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">Lihala & Co.</h2>
+                        </div>
+                        <p class="mb-4 max-w-md">
+                            Professional Chartered Accountants providing comprehensive financial solutions with integrity and excellence since 1983.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                            <li><a href="team.html" class="hover:text-white transition">Our Team</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                                <span>123 Financial District, Mumbai, India</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-3 text-blue-400"></i>
+                                <span>+91 22 1234 5678</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                                <span>info@lihalaco.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                    <p>&copy; 2025 Lihala & Co. All Rights Reserved.</p>
+                </div>
             </div>
         </footer>
 
-        <!-- JS for fade-in +  -->
+        <!-- JS for fade-in -->
         <script>
             // Fade-in effect
             const elements = document.querySelectorAll(".fade-up");
@@ -176,17 +237,9 @@
                         }
                     });
                 },
-                { threshold: 0.2 },
+                { threshold: 0.1 },
             );
             elements.forEach((el) => observer.observe(el));
-
-            //  service descriptions
-            document.querySelectorAll(".").forEach((title) => {
-                title.addEventListener("click", () => {
-                    const desc = title.nextElementSibling;
-                    desc.classList.("");
-                });
-            });
         </script>
     </body>
 </html>

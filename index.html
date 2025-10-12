@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -15,10 +14,16 @@
         <meta name="author" content="Lihala & Co." />
         <title>Lihala & Co - Chartered Accountants</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
     </head>
     <body class="bg-gray-50 text-gray-800">
-        <!-- Header -->
-
+        <!-- Header - Keeping exactly the same -->
         <header class="bg-white shadow-md sticky top-0 z-50">
             <div
                 class="container mx-auto flex justify-between items-center p-4"
@@ -45,83 +50,221 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
-
-        <section class="relative bg-blue-900 text-white">
-            <div class="absolute inset-0">
-                <img
-                    src="assets/best-office-background.jpg"
-                    alt="Office Background"
-                    class="w-full h-full object-cover opacity-60 blur-sm brightness-40"
-                />
+        <!-- Hero Section - Redesigned -->
+        <section class="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white">
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="relative container mx-auto px-6 py-24 md:py-32">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Trusted Chartered Accountants for Your Business
+                    </h2>
+                    <p class="mb-8 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                        Providing expert audit, tax, and advisory services to help you grow and succeed with over 40 years of experience.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="services.html"
+                            class="bg-white text-blue-700 px-8 py-3 rounded-md font-semibold shadow-md hover:bg-blue-50 transition duration-300 text-center"
+                            >Our Services</a
+                        >
+                        <a
+                            href="contact.html"
+                            class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition duration-300 text-center"
+                            >Contact Us</a
+                        >
+                    </div>
+                </div>
             </div>
-            <div
-                class="relative container mx-auto text-center px-4 py-32 text-white"
-            >
-                <h2 class="text-5xl font-extrabold mb-6 drop-shadow-md/50">
-                    Trusted Chartered Accountants for Your Business
-                </h2>
-                <p class="mb-8 text-xl max-w-2xl mx-auto font-bold">
-                    Providing expert audit, tax, and advisory services to help
-                    you grow and succeed.
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Core Services</h3>
+                    <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-search-dollar text-blue-700 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Audit & Assurance</h4>
+                        <p class="text-gray-600">Comprehensive audit services ensuring compliance and financial integrity for your business.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-file-invoice-dollar text-blue-700 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Tax Consulting</h4>
+                        <p class="text-gray-600">Strategic tax planning and compliance services to optimize your financial position.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-receipt text-blue-700 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">GST Services</h4>
+                        <p class="text-gray-600">Complete GST solutions including registration, filing, and advisory services.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="services.html" class="text-blue-700 font-semibold hover:text-blue-800 transition duration-300">
+                        View All Services <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us - Redesigned -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800">Why Choose Lihala & Co.</h3>
+                        <p class="mb-8 text-lg leading-relaxed text-gray-600">
+                            We are a dedicated team of Chartered Accountants committed to delivering accurate, reliable, and efficient financial solutions. Our services cover auditing, taxation, GST, and corporate advisory with a focus on client success.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-award text-blue-700"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-800">Over 40 Years of Experience</h4>
+                                    <p class="text-gray-600 mt-1">Four decades of trusted service and financial expertise.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-users text-blue-700"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-800">Expert Team</h4>
+                                    <p class="text-gray-600 mt-1">Qualified professionals with deep industry knowledge.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-shield-alt text-blue-700"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-800">Transparent & Ethical</h4>
+                                    <p class="text-gray-600 mt-1">We maintain the highest standards of integrity in all our practices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img
+                            src="assets/office.jpg"
+                            alt="Professional Office Environment"
+                            class="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="py-20 bg-blue-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold mb-4">What Our Clients Say</h3>
+                    <div class="w-20 h-1 bg-white mx-auto"></div>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-blue-700 p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-xl font-bold mr-4">AS</div>
+                            <div>
+                                <h4 class="text-xl font-semibold">Amit Sharma</h4>
+                                <p class="text-blue-200">CEO, TechSolutions Pvt. Ltd.</p>
+                            </div>
+                        </div>
+                        <p class="text-lg italic">
+                            "Lihala & Co. has been our trusted financial partner for over a decade. Their expertise in tax planning and compliance has saved us significant resources while ensuring we remain fully compliant with regulations."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Ready to Optimize Your Financial Strategy?</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Contact us today for a complimentary consultation and discover how our expertise can benefit your business.
                 </p>
                 <a
-                    href="services.html"
-                    class="bg-white text-blue-700 px-8 py-4 rounded-lg font-extrabold shadow-md hover:scale-105 transform transition"
-                    >Our Services</a
+                    href="contact.html"
+                    class="inline-block bg-blue-700 text-white px-8 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition duration-300"
+                    >Schedule a Consultation</a
                 >
             </div>
         </section>
 
-        <!-- Why Choose Us -->
-
-        <section class="py-20 container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <img
-                        src="assets/office.jpg"
-                        alt="Office"
-                        class="rounded-lg hover:scale-105 transition-transform duration-500"
-                    />
+        <!-- Footer - Enhanced to match other pages -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-3">
+                                <span class="text-white font-bold">LC</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">Lihala & Co.</h2>
+                        </div>
+                        <p class="mb-4 max-w-md">
+                            Professional Chartered Accountants providing comprehensive financial solutions with integrity and excellence since 1983.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                            <li><a href="team.html" class="hover:text-white transition">Our Team</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                                <span>11 Crooked Lane, Kolkata-700069, India</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-3 text-blue-400"></i>
+                                <span>+91-9831768090</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                                <span>lihala@yahoo.co.in</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-3xl font-bold mb-6 text-blue-700">
-                        Why Choose Us
-                    </h3>
-                    <p class="mb-6 text-lg leading-relaxed">
-                        We are a dedicated team of Chartered Accountants
-                        committed to delivering accurate, reliable, and
-                        efficient financial solutions. Our services cover
-                        auditing, taxation, GST, and corporate advisory with a
-                        focus on client success.
-                    </p>
-                    <ul class="space-y-3 text-lg">
-                        <li class="flex items-center">
-                            <span class="text-blue-600 mr-3">✔</span> Over 40
-                            years of experience
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-blue-600 mr-3">✔</span> Expert
-                            team with industry knowledge
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-blue-600 mr-3">✔</span>
-                            Transparent and ethical practices
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-
-        <footer class="bg-gray-900 text-gray-300 py-8">
-            <div class="container mx-auto text-center space-y-4">
-                <p>&copy; 2025 Lihala & Co. All Rights Reserved.</p>
-                <div class="space-x-6">
-                    <a href="#" class="hover:text-white">LinkedIn</a>
-                    <a href="#" class="hover:text-white">Twitter</a>
-                    <a href="#" class="hover:text-white">Facebook</a>
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                    <p>&copy; 2025 Lihala & Co. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
