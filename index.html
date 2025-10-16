@@ -197,8 +197,8 @@
                             </div>
                         </div>
                         <div class="text-center md:text-left">
-                            <h4 id="client-name" class="text-2xl font-bold mb-1">Amit Sharma</h4>
-                            <p id="client-position" class="text-blue-200 font-medium">CEO, TechSolutions Pvt. Ltd.</p>
+                            <h4 id="client-name" class="text-2xl font-bold mb-1">Apurva Salarpuria</h4>
+                            <p id="client-position" class="text-blue-200 font-medium">Salarpuria Properties Pvt. Ltd.</p>
                         </div>
                     </div>
                     <div class="relative">
@@ -238,7 +238,7 @@
                     href="contact.html"
                     class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-blue-800 transition duration-300"
                     >Schedule a Consultation</a
-                >
+                > 
             </div>
         </section>
 
@@ -300,38 +300,38 @@
                 </div>
             </div>
         </footer>
-        <script>
-    // Testimonial data
+       <script>
+    // Updated Testimonial data
     const testimonials = [
         {
-            name: "Amit Sharma",
-            position: "CEO, TechSolutions Pvt. Ltd.",
+            name: "Apurva Salarpuria",
+            position: "Salarpuria Properties Pvt. Ltd.",
             initials: "AS",
             quote: "Lihala & Co. has been our trusted financial partner for over a decade. Their expertise in tax planning and compliance has saved us significant resources while ensuring we remain fully compliant with regulations."
         },
         {
-            name: "Priya Mehta",
-            position: "Director, Global Imports Ltd.",
-            initials: "PM",
-            quote: "The GST advisory services provided by Lihala & Co. transformed our compliance process. Their team's attention to detail and proactive approach helped us avoid penalties and optimize our tax structure."
+            name: "Rajendra Prahladka",
+            position: "Hitaishi Creative Enterprises Pvt. Ltd.",
+            initials: "RP",
+            quote: "Their professional advice and timely support have been invaluable to our business growth. The team’s clarity and integrity make complex financial decisions simple."
         },
         {
-            name: "Rajiv Malhotra",
-            position: "Founder, StartupInnovate",
-            initials: "RM",
-            quote: "As a startup, we needed financial guidance we could trust. Lihala & Co. not only handled our audits impeccably but also provided strategic advice that helped us secure funding and scale efficiently."
+            name: "Bimal Kumar Ruia",
+            position: "Ruia Chemicals Pvt. Ltd.",
+            initials: "BR",
+            quote: "We’ve relied on Lihala & Co. for years for audits and taxation. Their efficiency and deep understanding of our industry’s regulatory framework are exceptional."
         },
         {
-            name: "Sanjay Verma",
-            position: "CFO, Manufacturing Corp",
-            initials: "SV",
-            quote: "Their corporate governance expertise is exceptional. The internal audit systems they implemented helped us identify risks early and improve our operational efficiency by 30%."
+            name: "Arindam Ghosh",
+            position: "Decor X Interior Pvt. Ltd.",
+            initials: "AG",
+            quote: "From GST to business structuring, Lihala & Co. has provided guidance that consistently helps us make informed, strategic decisions. A highly dependable partner."
         },
         {
-            name: "Neha Kapoor",
-            position: "Business Owner, Retail Chain",
-            initials: "NK",
-            quote: "Professional, reliable, and incredibly knowledgeable. Lihala & Co. handles all our accounting needs with precision. Their personal touch and commitment to client success sets them apart."
+            name: "Ashim Kar",
+            position: "Ashim Kar Industries Pvt. Ltd.",
+            initials: "AK",
+            quote: "Their audit and advisory services have been instrumental in strengthening our internal controls. The team’s professionalism and promptness are truly commendable."
         }
     ];
 
@@ -342,7 +342,7 @@
     function updateTestimonial(index) {
         const testimonial = testimonials[index];
         
-        // Add fade-out effect
+        // Fade out
         document.getElementById('testimonial-content').style.opacity = '0';
         
         setTimeout(() => {
@@ -351,7 +351,7 @@
             document.getElementById('client-avatar').textContent = testimonial.initials;
             document.getElementById('client-quote').textContent = testimonial.quote;
             
-            // Update active dot
+            // Update dots
             document.querySelectorAll('.testimonial-dot').forEach((dot, i) => {
                 dot.classList.toggle('opacity-100', i === index);
                 dot.classList.toggle('opacity-50', i !== index);
@@ -372,57 +372,35 @@
         updateTestimonial(nextIndex);
     }
 
-    // Function for previous testimonial
-    function prevTestimonial() {
-        const prevIndex = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
-        updateTestimonial(prevIndex);
-    }
-
-    // Auto-rotate function
+    // Auto-rotate every 5 seconds
     function startAutoRotate() {
         autoRotateInterval = setInterval(nextTestimonial, 5000);
     }
-
-    // Initialize
-    document.addEventListener('DOMContentLoaded', function() {
-        // Set up event listeners
-        document.getElementById('next-testimonial').addEventListener('click', function() {
-            nextTestimonial();
-            resetAutoRotate();
-        });
-        
-        document.getElementById('prev-testimonial').addEventListener('click', function() {
-            prevTestimonial();
-            resetAutoRotate();
-        });
-        
-        // Dot navigation
-        document.querySelectorAll('.testimonial-dot').forEach((dot, index) => {
-            dot.addEventListener('click', function() {
-                updateTestimonial(index);
-                resetAutoRotate();
-            });
-        });
-        
-        // Start auto-rotation
-        startAutoRotate();
-        
-        // Pause auto-rotation on hover
-        const container = document.getElementById('testimonial-container');
-        container.addEventListener('mouseenter', function() {
-            clearInterval(autoRotateInterval);
-        });
-        
-        container.addEventListener('mouseleave', function() {
-            startAutoRotate();
-        });
-    });
 
     // Reset auto-rotate timer
     function resetAutoRotate() {
         clearInterval(autoRotateInterval);
         startAutoRotate();
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Dot click event
+        document.querySelectorAll('.testimonial-dot').forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                updateTestimonial(index);
+                resetAutoRotate();
+            });
+        });
+
+        // Start auto rotation
+        startAutoRotate();
+
+        // Pause rotation on hover
+        const container = document.getElementById('testimonial-container');
+        container.addEventListener('mouseenter', () => clearInterval(autoRotateInterval));
+        container.addEventListener('mouseleave', startAutoRotate);
+    });
 </script>
+
     </body>
 </html>
